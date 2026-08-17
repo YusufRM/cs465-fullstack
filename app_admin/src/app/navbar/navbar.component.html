@@ -1,0 +1,10 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">Travlr Getaways Admin</a>
+    <div class="navbar-nav ms-auto flex-row">
+      <a class="nav-item nav-link me-3" routerLink="">Trips</a>
+      <a class="nav-item nav-link" routerLink="login" *ngIf="!isLoggedIn()">Log In</a>
+      <a class="nav-item nav-link" href="#" (click)="onLogout(); $event.preventDefault()" *ngIf="isLoggedIn()">Log Out</a>
+    </div>
+  </div>
+</nav>
